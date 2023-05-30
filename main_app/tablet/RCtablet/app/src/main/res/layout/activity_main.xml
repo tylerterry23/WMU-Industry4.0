@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--this layout is main layout-->
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:theme="@style/Theme.RCtablet.AppBarOverlay">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/broncoyellow"
+            app:popupTheme="@style/Theme.RCtablet.PopupOverlay" >
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left">
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="440dp"
+                    android:layout_height="wrap_content"
+                    android:text="Industry 4.0 project X_0"
+                    android:textColor="@color/broncobrown"
+                    android:textStyle="bold"
+                    android:layout_marginTop="6dp"
+                    android:textSize="30dp" />
+               <Button
+                    android:id="@+id/buttonST"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/setting_s"
+                    tools:textSize="20dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+
+                    android:textColor="@color/broncoyellow"
+                    android:backgroundTint="@color/broncobrown" />
+
+            </LinearLayout>
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+    <View android:layout_width="match_parent"
+        android:layout_marginTop="60dp"
+        android:layout_height="20dp"
+        android:background="@drawable/toolbar_dropshadow"/>
+    <include layout="@layout/content_main" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="79dp"
+        android:layout_height="78dp"
+        android:layout_gravity="bottom|end"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="@color/broncobrown"
+        app:borderWidth="5dp"
+        android:elevation="4dp"
+        app:backgroundTint="@color/broncoyellow"
+        app:tint = "@color/broncoyellow"
+
+
+
+ />
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="\?"
+        android:textSize="58dp"
+        android:elevation="60dp"
+        app:layout_anchor="@+id/fab"
+        app:layout_anchorGravity="center"
+        android:textColor="@color/broncoyellow"/>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

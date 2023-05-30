@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">RCtablet</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+
+    <string name="station_number">Station #</string>
+    <string name="ave_time">--:--</string>
+    <string name="setting_s">Settings</string>
+    <string name="time_spent">--:--</string>
+    <string-array name="station_n">
+        <item>Station #1</item>
+        <item>Station #2</item>
+        <item>Station #3</item>
+        <item>Station #4</item>
+        <item>Station #5</item>
+    </string-array>
+    <string name="title_activity_popup">popup_activity</string>
+    <string name="station_n">Station #</string>
+</resources>

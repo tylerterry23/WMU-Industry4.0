@@ -1,0 +1,14 @@
+{% extends 'main.html' %}
+{% block content %}
+
+    <!-- Session Key -->
+    <form class="hidden">
+        <div class="container mx-auto mt-32 text-center max-w-sm">
+            <label for="key" class="font-bold text-xl mt-24">Session Key:</label>
+            <input type="key" id="key" class="text-center bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" placeholder="3490235" required>
+            <button href="/src/liveDashboard.html" class="mt-3 p-3 px-6 pt-3 text-white bg-black rounded-full baseline hover:bg-gray-500 ">
+                Start Dashboard
+            </button>
+        </div>
+    </form>
+{% endblock content %}

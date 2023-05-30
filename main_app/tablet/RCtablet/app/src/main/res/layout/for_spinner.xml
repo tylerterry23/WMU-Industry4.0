@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--this layout is for dropdown list for selecting stations-->
+<!-- fragment_setting -->
+<CheckedTextView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    style="?android:attr/spinnerDropDownItemStyle"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textSize="35sp"
+    android:layout_margin="5dp"
+    android:padding="5dp"
+    />

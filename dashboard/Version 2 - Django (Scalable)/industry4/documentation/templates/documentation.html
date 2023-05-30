@@ -1,0 +1,128 @@
+{% extends 'main.html' %}
+{% block content %}
+
+{% load static %}
+
+<body class="bg-gray-100">
+
+
+    <!-- Documentation Section -->
+    <div class="container mx-auto px-4 pb-12">
+
+        <!-- Title | Description | Github Button -->
+        <h1 class="mt-10 text-center font-bold text-7xl">Documentation</h1>
+        <p class="pb-1 text-center text-md">A showcase of my latest and greatest software creations</p>
+        <!-- GITHUB -->
+        <div class="flex space-x-2 justify-center">
+            <div>
+                {% load static %}
+                <a href="https://github.com/JasonJohnsonWMU/RCAssembly" class="bg-black">
+                    <img src="{% static '/images/icons/github-mark.svg' %}" alt="arrow" class="w-10 h-10">
+                </a>
+            </div>  
+        </div>
+
+        
+
+        <!-- Project Cards -->
+        <div class="flex justify-between gap-4 mt-8">
+
+            <!-- Project 1 -->
+            <div class="w-4/12  bg-white rounded shadow-xl">
+                <img class="w-full h-52" src={% static 'images/display/Capture.PNG' %} alt="Robot Assistant">
+
+                <div class="px-6 py-4">
+
+                    <!-- Title -->
+                    <div class="font-bold text-xl mb-2">User Interface - <br>Data Management & User Controls </div>
+
+                    <!-- Description -->
+                    <p class="text-gray-700 text-base">
+                        A user interface that simplifies data management and user controls for a data-intensive application. Created an intuitive interface for easy manipulation of large volumes of data, while also implementing robust user controls to ensure security and integrity. Built a high-performance, scalable application using modern software development tools and techniques.
+                    </p>
+
+                    <!-- learn more button -->
+                    <div>
+                        <button type="button" class="bg-black text-white rounded-md drop-shadow-2xl pt-1 mt-2 px-2 hover:bg-gray-500">Learn More <i class="bi bi-arrow-right"></i></button>
+                    </div>
+
+                </div>
+
+                <!-- Tags -->
+                <div class="px-6 pb-2 ">
+                    <div class="inline-block font-semibold text-sm">Technologies:</div>
+                    <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">Python</span>
+                    <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">tkinter</span>
+                </div>
+
+            </div>
+
+            <!-- Project 2 -->
+            <div class="w-4/12 bg-white rounded shadow-xl">
+                <img class="w-full h-52" src={% static 'images/display/tablet_new.jpg' %} alt="tablet photo">
+
+                <div class="px-6 py-4">
+
+                    <!-- Title -->
+                    <div class="font-bold text-xl mb-2">Station Panel - <br>Digital Insights & Controls </div>
+
+                    <!-- Description -->
+                    <p class="text-gray-700 text-base">
+                        An application designed for Android tablets at each station that provides digital insights and controls for industrial processes. The app features a simple interface with a timer, station instructions, and user controls. Built using modern mobile development tools, the app is reliable, scalable, and provides valuable insights for informed decision-making.
+                    </p>
+
+                    <!-- learn more button -->
+                    <div>
+                        <button type="button" class="bg-black text-white rounded-md drop-shadow-2xl pt-1 mt-2 px-2 hover:bg-gray-500">Learn More <i class="bi bi-arrow-right"></i></button>
+                    </div>
+
+                </div>
+
+                <div class="px-6 pb-2 border-">
+                    <div class="inline-block font-semibold text-sm">Technologies:</div>
+                    <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">Java</span>
+                </div>
+
+            </div>
+
+            <!-- Project 3 -->
+            <div class="w-4/12 bg-white rounded shadow-xl">
+                <img class="w-full h-52" src={% static 'images/dashboard1.png' %} alt="Robot Assistant">
+
+                <div class="px-6 py-4">
+
+                    <!-- Title -->
+                    <div class="font-bold text-xl mb-2">Live Dashboard - <br>Real-Time Updates and Statistics</div>
+
+                    <!-- Description -->
+                    <p class="text-gray-700 text-base">
+                        A live dashboard that delivers real-time updates and statistics for an Industry 4.0 lab at a university. Used modern web technologies to design a user-friendly interface that presents live data from various sensors and sources. Incorporated advanced data visualization tools to enable users to gain insights and make informed decisions on the fly.
+                    </p>
+
+                    <!-- learn more button -->
+                    <div>
+                        <button type="button" class="bg-black text-white rounded-md drop-shadow-2xl pt-1 mt-2 px-2 hover:bg-gray-500">Learn More <i class="bi bi-arrow-right"></i></button>
+                    </div>
+
+                </div>
+
+                <!-- Tags -->
+                <div class="px-6 pb-2">
+                    <div class="inline-block font-semibold text-sm">Technologies:</div>
+                    <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">Python</span>
+                    <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">Django</span>
+                    <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">Tailwind</span>
+                </div>
+
+            </div>
+
+
+        </div>
+        
+
+
+        
+    </div>
+  </body>
+
+{% endblock content %}

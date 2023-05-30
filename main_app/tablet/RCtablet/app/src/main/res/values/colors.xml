@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--list of colors-->
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="broncobrown">#FF532e1f</color>
+    <color name="broncoyellow">#FFf1c500</color>
+    <color name="lightbroncoyellow">#FFfff9dd</color>
+    <color name="lightbroncobrown">#FF8c6e62</color>
+</resources>

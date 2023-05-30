@@ -1,0 +1,65 @@
+Industry 4.0 Home Tab Help
+
+Time Analysis:
+This frame contains 3 labels that will track various time information for the program
+
+1. Total Time:
+	Total Time contains the time information for the duration of the entire program. The timer starts when the application is opened. This information is useful to know how long the program has been running
+
+2. Run Time:
+	Run Time contains the time information for when the assembly is running. The timer starts whenever a station is active. Note: The time will stay active regardless of which station is active. The time will stay active regardless of how many stations are active.
+
+3. Fully Productive Time:
+	Fully Productive Time contains the time information when all stations are active. This information is useful to know when the assembly is being fully productive. The timer starts when all 5 stations are active.
+
+Statistics:
+This frame contains a counter as well as 2 progress bars.
+
+1. Total Cars Built:
+	This counter contains the number of vehicles that are completed. Remember, this will only increase when a vehicle is completed, not when a vehicle is created. This number also will not decrease if a completed vehicle is unaccepted.
+
+2. Availability:
+	The Availability progress bar contains a visual representation of how many stations are available. When a station goes active, the progress bar is decreased to reflect the number of available stations. When a station gets freed up, the  progress bar will increase representing more availability.
+
+3. Quality:
+	The Quality progress bar represents the number of accepted vehicles in regards to the number of completed vehicles. When a vehicle is unaccepted, the quality bar will decrease. In contrast, when a vehicle is completed and is accepted, the quality bar will increase. The bar is based off of the percentage of accepted vehicles to the number of compeleted vehicles.
+
+Station Tiles:
+	The home page contains 5 stations tiles all with the same data inside the tiles. The tiles contain 4 labels of information which all dynamically change when a vehicle becomes active.
+
+1. Active:
+	This will show the vehicleID of the vehicle that is currently at the station.
+
+2. Run Time:
+	Run Time is the timer of that station. When a vehicle reaches a station, the run time begins counting. When the station is completed, the tile will be reset to the default/inactive values.
+
+3. Time Goal:
+	Time Goal is the Goal time for that specific station. The information is pulled from the database to represent the goal time for that station.
+
+4. Inventory Request (Incomplete):
+	The Inventory Request label represents the need for more parts at that station. When the user at a station makes a request for more inventory parts, this label change to request made for parts.
+
+Tile Colors:
+	Each tile remains grey until they are active. When a tile becomes active, the color of the tile will represent the stations time. There are 5 different color stages.
+
+1. Light Blue:
+	When a station is light blue, this means the station is very early in comparision to the time goal.
+
+2. Dark Blue:
+	When a station is dark blue, this means the stations is still early but closer to the time goal.
+
+3. Green:
+	When a station is green, this means the stations is within the time window for the time goal.
+
+4. Yellow:
+	When a station is yellow, this means the station is starting to go over the time goal, but not by a large amount of time.
+
+5. Red:
+	When a station is red, this means the vehicle has spent too much time at that station.
+
+Tablets:
+	To help with the tracking of time data during the process of the assembly, there are tablets at each station. The frame labeled: Tablet Online Status contains the connection information for each of the tablets. When a tablet becomes active, The light next to the corresponding label will turn green. There are two buttons on the tablet frame as well. These buttons are connect and connect all. When the user clicks the connect button, the application will listen to connect 1 tablet. When the user clicks the connect all button, the application will listen for all the tablets to be connected. NOTE: WHEN EITHER OF THE BUTTONS ARE CLICKED, THE PROGRAM CANNOT TAKE INPUT FROM THE SCANNERS. THE PROGRAM DOES NOT UPDATE WHILE ATTEMPTING TO CONNECT THE TABLETS.
+
+Status Window:
+	The Status window on the bottom right of the screen is a small terminal display for all the output of the program. This will update with information about what the application is currently doing. For example: when a new vehicle is started, the status window will display a line of text indicating which vehicle started.
+

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--this layout is for instruction sildes-->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView style="?android:textAppearanceMedium"
+        android:id="@+id/slidtext"
+        android:padding="30dp"
+        android:lineSpacingMultiplier="1.2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/instdes"
+        android:elevation="20dp"
+        android:height="300dp"
+        android:layout_margin="30dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:text="instruction" />
+</ScrollView>

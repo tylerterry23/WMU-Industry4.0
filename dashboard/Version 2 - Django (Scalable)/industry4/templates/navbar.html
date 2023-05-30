@@ -1,0 +1,29 @@
+{% load static %}
+
+<!-- Navbar -->
+<nav class="p-5 bg-white border-b border-gray-200">
+
+    <!-- Menu (medium & large screens) -->
+    <div class="flex items-center justify-between">
+
+        <!-- Logo -->
+        <div class="pt-2">
+            <img src="{% static 'images/western-logo.svg' %}"  alt="logo" style="width: 12em; margin-top: -.7em; sm:hidden"/>
+        </div>
+
+        <!-- Menu Items -->
+        <div class="text-black space-x-6 md:flex">
+        <a href={% url 'home' %} class="hover:text-darkGrayishBlue">Home</a>
+        <a>|</a>
+        <a href={% url 'profiles' %} class="hover:text-darkGrayishBlue">Contributors</a>
+        <a>|</a>
+        <a href={% url 'documentation' %} class="hover:text-darkGrayishBlue">Documentation</a>
+        </div>
+
+        <!-- Live Dashboard Button -->
+        <a href={% url 'dashboard' %} class="p-3 px-6 pt-3 text-white bg-black rounded-full baseline hover:bg-gray-500">
+            Live Dashboard 
+        </a>
+
+    </div>
+</nav>
